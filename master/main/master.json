@@ -1,0 +1,36 @@
+{
+  "HTTP的配置": "HTTP",
+  "http": {
+    "API服务端接口":"提供任务增删改查服务",
+    "apiPort":8090,
+    "API接口读超时":"单位是毫秒",
+    "apiReadTimeout":5000,
+    "API接口写超时":"单位是毫秒",
+    "apiWriteTimeout":5000
+  },
+  "ETCD的配置": "ETCD",
+  "etcd": {
+    "ETCD的集群列表": "配置多个，避免单点故障",
+    "etcdEndpoints": ["localhost:2379"],
+    "ETCD的连接超时": "单位毫秒",
+    "etcdDialTimeout": 5000
+  },
+  "Mongodb的配置": "MONGODB",
+  "mongodb": {
+    "mongodb的地址":"采用mongodb的URI",
+    "mongodbUri": "mongodb://127.0.0.1:27017",
+    "mongodb的连接超时时间": "毫秒",
+    "mongodbConnectTimeout": 5000
+  },
+  "Log的配置": "LOG",
+  "log": {
+    "log的数据库": "将日志保存在这个数据库下",
+    "logDatabase": "cron",
+    "log的collection":"将日志保存在这个collection中",
+    "logCollection": "log",
+    "log的默认分页大小":"当获取url中的分页大小不正确时，给一个默认值",
+    "logDefaultLimitPage": 20
+  },
+  "web页面根目录": "静态页面，前后端完全分离开发",
+  "webroot": "./webroot"
+}
